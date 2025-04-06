@@ -1,0 +1,26 @@
+name: NuGet Push
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-24.04
+        name: Update NuGet package
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup .NET @ Latest
+              uses: actions/setup-dotnet@v4
+
+            - name: Build and Publish
+              working-directory: src/WaylandSharpGen
+              run: |
+                  dotnet restore WaylandSharpGen.csproj
+                  dotnet pack WaylandSharpGen.csproj -c Release -o artifacts
+            - name: Authenticate to GitHub Packages Nuget Registry
+              run: |
+                  dotnet nuget add source --username BrycensRanch --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/BrycensRanch/index.json"
+            - name: Push
+              run: "dotnet nuget push artifacts/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s github"

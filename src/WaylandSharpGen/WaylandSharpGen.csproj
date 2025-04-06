@@ -1,20 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Label="Nuget Properties">
-    <PackageId>WaylandSharp</PackageId>
+    <PackageId>WaylandSharper</PackageId>
     <Description>An incremental source generator to automatically create bindings to Wayland using given protocol xml files.</Description>
     <Authors>X9VoiD</Authors>
     <PackageTags>wayland;source-generator;</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/X9VoiD/WaylandSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/BrycensRanch/WaylandSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadMeFile>README.md</PackageReadMeFile>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Label="SourceLink Properties">
@@ -38,7 +40,7 @@
 
   <ItemGroup Label="Nuget Packaging">
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-    <None Include="WaylandSharpGen.props" Pack="true" PackagePath="build" Visible="false" />
+    <None Include="WaylandSharper.props" Pack="true" PackagePath="build" Visible="false" />
     <None Include="../../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
