@@ -1,5 +1,5 @@
 using System.Xml;
-using WaylandSharpGen.Xml;
+using WaylandSharper.Xml;
 
 namespace WaylandSharp.Tests;
 
@@ -234,7 +234,7 @@ public class ProtocolDefinitionTest
             </enum>
             """);
 
-        var protocolEnumDefinition = WaylandSharpGen.Xml.Enum.FromXml(doc.DocumentElement!);
+        var protocolEnumDefinition = WaylandSharper.Xml.Enum.FromXml(doc.DocumentElement!);
 
         protocolEnumDefinition.Name.Should().Be("foo");
         protocolEnumDefinition.DocumentationSummary.Should().BeNull();
@@ -255,7 +255,7 @@ public class ProtocolDefinitionTest
             </enum>
             """);
 
-        var protocolEnumDefinition = WaylandSharpGen.Xml.Enum.FromXml(doc.DocumentElement!);
+        var protocolEnumDefinition = WaylandSharper.Xml.Enum.FromXml(doc.DocumentElement!);
 
         protocolEnumDefinition.DocumentationSummary.Should().Be("a foo");
         protocolEnumDefinition.Documentation.Should().Be("The foo enum. blabla");
@@ -493,7 +493,7 @@ public class ProtocolDefinitionTest
             </enum>
             """);
 
-        var protocolEnumDefinition = WaylandSharpGen.Xml.Enum.FromXml(doc.DocumentElement!);
+        var protocolEnumDefinition = WaylandSharper.Xml.Enum.FromXml(doc.DocumentElement!);
 
         protocolEnumDefinition.Name.Should().Be("foo");
         protocolEnumDefinition.Members.Should().HaveCount(1);

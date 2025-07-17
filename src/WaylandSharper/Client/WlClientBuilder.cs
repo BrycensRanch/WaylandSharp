@@ -1,9 +1,9 @@
 using System.Collections.Immutable;
-using WaylandSharpGen.Xml;
-using static WaylandSharpGen.Client.WlClientIdentifiers;
-using static WaylandSharpGen.WlCommonIdentifiers;
+using WaylandSharper.Xml;
+using static WaylandSharper.Client.WlClientIdentifiers;
+using static WaylandSharper.WlCommonIdentifiers;
 
-namespace WaylandSharpGen.Client;
+namespace WaylandSharper.Client;
 
 internal class WlClientBuilder
 {

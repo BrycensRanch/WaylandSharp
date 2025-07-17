@@ -1,4 +1,4 @@
-namespace WaylandSharpGen;
+namespace WaylandSharper;
 
 internal static class WlCommonIdentifiers
 {

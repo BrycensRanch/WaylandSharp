@@ -1,8 +1,8 @@
-using static WaylandSharpGen.WlCommonIdentifiers;
-using static WaylandSharpGen.Client.WlClientIdentifiers;
-using WaylandSharpGen.Xml;
+using WaylandSharper.Xml;
+using static WaylandSharper.WlCommonIdentifiers;
+using static WaylandSharper.Client.WlClientIdentifiers;
 
-namespace WaylandSharpGen.Client;
+namespace WaylandSharper.Client;
 
 internal class WlClientPInvokeBuilder
 {

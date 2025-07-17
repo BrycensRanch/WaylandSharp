@@ -1,4 +1,4 @@
-namespace WaylandSharpGen.Client;
+namespace WaylandSharper.Client;
 
 internal static class WlClientIdentifiers
 {

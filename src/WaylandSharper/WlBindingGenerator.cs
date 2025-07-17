@@ -1,11 +1,11 @@
 using System.Collections.Immutable;
 using System.Text;
 using System.Xml;
-using WaylandSharpGen.Client;
-using WaylandSharpGen.Xml;
-using static WaylandSharpGen.WlCommonIdentifiers;
+using WaylandSharper.Client;
+using WaylandSharper.Xml;
+using static WaylandSharper.WlCommonIdentifiers;
 
-namespace WaylandSharpGen;
+namespace WaylandSharper;
 
 /*
  * Use the following regex to commonize schtuff from text.

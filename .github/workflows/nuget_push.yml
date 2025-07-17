@@ -15,10 +15,10 @@ jobs:
               uses: actions/setup-dotnet@v4
 
             - name: Build and Publish
-              working-directory: src/WaylandSharpGen
+              working-directory: src/WaylandSharper
               run: |
-                  dotnet restore WaylandSharpGen.csproj
-                  dotnet pack WaylandSharpGen.csproj -c Release -o artifacts
+                  dotnet restore WaylandSharper.csproj
+                  dotnet pack WaylandSharper.csproj -c Release -o artifacts
             - name: Authenticate to GitHub Packages Nuget Registry
               run: |
                   dotnet nuget add source --username BrycensRanch --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/BrycensRanch/index.json"

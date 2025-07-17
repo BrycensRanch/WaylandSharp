@@ -8,10 +8,10 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Text;
-using WaylandSharpGen;
-using WaylandSharpGen.Client;
-using WaylandSharpGen.Xml;
-using static WaylandSharpGen.Client.WlClientIdentifiers;
+using WaylandSharper;
+using WaylandSharper.Client;
+using WaylandSharper.Xml;
+using static WaylandSharper.Client.WlClientIdentifiers;
 
 namespace WaylandSharp.Tests.Client;
 

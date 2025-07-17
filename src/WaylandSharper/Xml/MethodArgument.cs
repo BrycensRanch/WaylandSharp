@@ -1,6 +1,6 @@
 using System.Xml;
 
-namespace WaylandSharpGen.Xml;
+namespace WaylandSharper.Xml;
 
 internal sealed record MethodArgument
 {

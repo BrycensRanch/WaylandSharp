@@ -1,4 +1,4 @@
-using WaylandSharpGen;
+using WaylandSharper;
 
 namespace WaylandSharp.Tests;
 

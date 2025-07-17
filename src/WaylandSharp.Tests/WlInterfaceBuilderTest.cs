@@ -1,6 +1,6 @@
 using System.Xml;
-using WaylandSharpGen;
-using WaylandSharpGen.Xml;
+using WaylandSharper;
+using WaylandSharper.Xml;
 
 namespace WaylandSharp.Tests;
 

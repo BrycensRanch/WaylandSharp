@@ -1,7 +1,7 @@
 using System.Collections.Immutable;
-using WaylandSharpGen.Xml;
-using static WaylandSharpGen.WlCommonIdentifiers;
-namespace WaylandSharpGen;
+using WaylandSharper.Xml;
+using static WaylandSharper.WlCommonIdentifiers;
+namespace WaylandSharper;
 
 internal class WlInterfaceBuilder
 {

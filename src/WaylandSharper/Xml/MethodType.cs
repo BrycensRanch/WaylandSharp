@@ -1,4 +1,4 @@
-namespace WaylandSharpGen.Xml;
+namespace WaylandSharper.Xml;
 
 internal enum MethodType
 {

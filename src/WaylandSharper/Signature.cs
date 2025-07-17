@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace WaylandSharpGen;
+namespace WaylandSharper;
 
 public readonly struct Signature : IEquatable<Signature>
 {

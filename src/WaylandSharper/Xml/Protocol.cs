@@ -2,7 +2,7 @@ using System.Collections.Immutable;
 using System.Xml;
 
 [assembly: System.Runtime.CompilerServices.InternalsVisibleTo("WaylandSharp.Tests")]
-namespace WaylandSharpGen.Xml;
+namespace WaylandSharper.Xml;
 
 internal sealed record Protocol
 {

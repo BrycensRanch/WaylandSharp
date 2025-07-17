@@ -1,8 +1,8 @@
 using System.Text;
 using System.Text.RegularExpressions;
-using WaylandSharpGen.Xml;
+using WaylandSharper.Xml;
 
-namespace WaylandSharpGen;
+namespace WaylandSharper;
 
 internal static class Util
 {
