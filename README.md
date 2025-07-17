@@ -6,11 +6,11 @@ using given protocol xml files.
 
 ## Compatibility
 
-| .NET Version | Compatibility |
-| ------------ | ------------- |
-| .NET | (6.0 and above) :heavy_check_mark: |
-| .NET Standard | :x: |
-| .NET Framework | :x: |
+| .NET Version | Compatibility                      |
+| ------------ |------------------------------------|
+| .NET | (9.0 and above) :heavy_check_mark: |
+| .NET Standard | :x:                                |
+| .NET Framework | :x:                                |
 
 ## Getting started
 
