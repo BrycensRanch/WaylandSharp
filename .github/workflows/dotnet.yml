@@ -12,8 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
-    - name: Build WaylandSharpGen
-      run: dotnet build src/WaylandSharpGen
+    - name: Build WaylandSharper
+      run: dotnet build src/WaylandSharper
 
   Tests:
 
