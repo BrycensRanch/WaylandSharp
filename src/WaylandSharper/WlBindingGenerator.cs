@@ -53,6 +53,7 @@ internal class WlBindingGenerator : IIncrementalGenerator
 
                 return protocolRecords.ToImmutable();
             })
+            .Where(static t => t.Item2 != GenerationOption.Unknown)
             .Select(static (t, cts) =>
             {
                 var xmlDoc = new XmlDocument();
